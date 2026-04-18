@@ -1,0 +1,38 @@
+commands list:
+
+uv init
+
+2) create virutal environment 
+ 1) check pythn
+ uv python list 
+ 2) select installed python version 
+ 3) uv venv  env -- python cpython-3.14.3-windows-x86_64-none  and pass selected python verrsion 
+
+	uv venv  env --python cpython-3.14.3-windows-x86_64-none
+	then enter below code
+	 env\Scripts\activate
+now update .gitignore
+ # Virtual environments
+.venv
+env/
+venv/
+.env
+
+update the requirements file and execute the below code 
+uv pip install -r requirements.txt
+
+
+after finish the steps, 
+execute below code 
+
+add api keys in .env foler 
+openai_api_key="" 
+
+get test api keys :
+Gemini api keys
+grpq api key 
+openrouter 
+kimi2 
+
+from dotenv import load_dotenv
+import os 
